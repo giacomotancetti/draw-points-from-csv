@@ -2,7 +2,8 @@
 ; da un file .csv con la seguente struttura:
 ; coord_x;coord_y;coord_z;nome_punto
 
-(setq idf(open "c:/Users/giaco/Desktop/coordinate.csv" "r"))
+(setq dir (getfiled "Select a csv file" "c:/" "csv" 8))
+(setq idf(open dir "r"))
 (setq delimiter ";")
 (setq h_testo "5.0")
 
